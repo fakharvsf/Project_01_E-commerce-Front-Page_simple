@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e6e6e6;
+}
+:root {
+  --color-primary-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+
+  --border-radius: 2rem;
+  --search-padding: 0.6rem 1rem;
+}
+img {
+  width: 100%;
+}
+
+#btn__override {
+  background-color: #008080;
+  color: whitesmoke;
+}
+
+#nav__bg-color {
+  background-color: #325454;
+}
+
+nav .search-bar {
+  background: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+}
+input[type="search"] {
+  background: transparent;
+  width: 30vw;
+  color: var(--color-dark);
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  outline: 0;
+  border: none;
+}
+.search-bar input[type="search"]::placeholder {
+  color: var(--color-gray);
+}
+.d-flex {
+  gap: 1rem;
+}
+.Form-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* -----------------FOOTER DSIGN--------------- */
+.main-footer {
+  display: flex;
+}
+.second-footer {
+  margin: auto 0;
+  width: 30%;
+}
+.anker {
+  font-weight: lighter;
+  font-size: small;
+}
+.base-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  gap: 3rem;
+}
+
+.base-footer,
+.main-footer {
+  background-color: #3d008d;
+  color: white;
+}
+
+.second-footer a,
+.base-footer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.care-last {
+  margin-right: 12rem;
+}
+.bar-code {
+  width: 6.25rem;
+}
+
+@media only screen and (max-width: 650px) {
+  #form-Disp {
+    display: none;
+  }
+}
+
+/* ------------------------------Product Page-------------------------- */
