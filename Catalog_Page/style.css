@@ -29,6 +29,10 @@ img {
 #nav__bg-color {
   background-color: #325454;
 }
+.nav-bar-container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 nav .search-bar {
   background: var(--color-light);

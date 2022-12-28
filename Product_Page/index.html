@@ -35,66 +35,67 @@
 
   <body>
     <!--Bootstrap nav bar w/ toggle  -->
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark"
-      id="nav__bg-color"
-    >
-      <a class="navbar-brand" href="../index.html">ShopCart</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <div id="nav__bg-color">
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-dark nav-bar-container"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="../index.html">ShopCart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div
-        class="collapse navbar-collapse Form-content"
-        id="navbarTogglerDemo02"
-        data-toggle="collapse"
-      >
-        <div id="form-Disp">
-          <form class="d-flex my-2 my-lg-0">
-            <div class="search-bar">
-              <i class="uil uil-search search-api"></i>
-              <input
-                type="search"
-                placeholder="Search for anything"
-                id="feed-search"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                id="btn__override"
-                type="submit"
-              >
-                Search
-              </button>
-            </div>
-          </form>
+        <div
+          class="collapse navbar-collapse Form-content"
+          id="navbarTogglerDemo02"
+          data-toggle="collapse"
+        >
+          <div id="form-Disp">
+            <form class="d-flex my-2 my-lg-0">
+              <div class="search-bar">
+                <i class="uil uil-search search-api"></i>
+                <input
+                  type="search"
+                  placeholder="Search for anything"
+                  id="feed-search"
+                />
+              </div>
+              <div>
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  id="btn__override"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="d-flex ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link home-bbtn" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cat-bbtn" href="#">Catagories</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex ms-auto">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link home-bbtn" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link cat-bbtn" href="#">Catagories</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- Products Content -->
     <div>
