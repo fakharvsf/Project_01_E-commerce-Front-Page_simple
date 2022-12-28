@@ -32,6 +32,7 @@
 
     <title>TEMPLATE</title>
   </head>
+
   <body>
     <!--Bootstrap nav bar w/ toggle  -->
     <nav
@@ -101,15 +102,25 @@
         <div class="row no-gutters">
           <div class="col-md-4 mt-5">
             <div>
-              <img
-                src="https://i5.walmartimages.com/asr/625fa51f-c13a-4150-8c56-25d16fb9c25f.a4d62fcf07bd843d480bcd9500e03b6c.jpeg?"
-                class="card-img img-fluid"
-                alt="Guide to Web Design"
-                style="padding: 5px; border-radius: 8px"
-              />
+              <figure
+                class="figure-zoom"
+                onmousemove="zoom(event)"
+                style="
+                  background-image: url(https://i5.walmartimages.com/asr/625fa51f-c13a-4150-8c56-25d16fb9c25f.a4d62fcf07bd843d480bcd9500e03b6c.jpeg?);
+                "
+              >
+                <img
+                  id="Product-image-show"
+                  src="https://i5.walmartimages.com/asr/625fa51f-c13a-4150-8c56-25d16fb9c25f.a4d62fcf07bd843d480bcd9500e03b6c.jpeg?"
+                  class="card-img img-fluid"
+                  alt="Guide to Web Design"
+                  style="padding: 5px; border-radius: 8px"
+                />
+              </figure>
+
               <div
                 style="height: 100px"
-                class="d-flex nav nav-tabs flex-nowrap"
+                class="d-flex nav nav-tabs flex-nowrap overflow-hidden"
                 id="nav-image"
                 role="tablist"
               >
@@ -136,7 +147,7 @@
                 <img
                   href="#nav-f03img"
                   data-toggle="tab"
-                  id="nav-fa02img-tab"
+                  id="nav-fa03img-tab"
                   role="tab"
                   aria-controls="nav-f03img"
                   aria-selected="false"
@@ -183,7 +194,7 @@
             </div>
             <div>
               <div
-                style="flex-wrap: nowrap"
+                style="flex-wrap: wrap"
                 class="d-flex nav nav-tabs mt-5"
                 id="nav-dbda"
                 role="tablist"
@@ -224,23 +235,11 @@
                 >
                   <div>Warrenty</div>
                 </a>
-                <a
-                  class="nav-link"
-                  id="nav-capsule-tab  "
-                  style="flex-shrink: 0 !important"
-                  data-toggle="tab"
-                  href="#nav-adverteffect"
-                  role="tab"
-                  aria-controls="nav-adverteffect"
-                  aria-selected="false"
-                >
-                  <div>Warnings</div>
-                </a>
               </div>
             </div>
             <div
               style="min-height: 200px"
-              class="tab-content mt-2 ml-5"
+              class="tab-content mt-2 ml-5 d-flex flex-wrap"
               id="nav-dbdaContent"
             >
               <div
@@ -269,7 +268,7 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade show"
+                class="tab-pane fade show content-tohide"
                 id="nav-benefituse"
                 role="tabpanel"
                 aria-labelledby="nav-benefituse-tab"
@@ -313,19 +312,276 @@
                   Walmart Warranty Applies <br /><strong
                     >Warranty information</strong
                   ><br />
-                  1-Year Limited Warranty.
-                </div>
-              </div>
-              <div
-                class="tab-pane fade show"
-                id="nav-adverteffect"
-                role="tabpanel"
-                aria-labelledby="nav-adverteffect-tab"
-              >
-                <div class="w-full text-base font-normal mr-5">
-                  <strong>⚠️WarningWARNING - California Proposition 65</strong
+                  1-Year Limited Warranty. <br /><strong
+                    >⚠️WarningWARNING - California Proposition 65</strong
                   ><br />
                   Fomaldehyde
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-xs-6 col-md-8">
+              <div class="well well-sm">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 text-center">
+                    <h1>Ratings</h1>
+                    <h1 class="rating-num">4.0</h1>
+
+                    <div>1,050,008 total</div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="row rating-desc">
+                      <div class="col-xs-3 col-md-3 text-right">5</div>
+                      <div class="col-xs-8 col-md-9">
+                        <div class="progress progress-striped">
+                          <div
+                            class="progress-bar progress-bar-success"
+                            role="progressbar"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 80%"
+                          >
+                            <span class="sr-only">80%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end 5 -->
+                      <div class="col-xs-3 col-md-3 text-right">4</div>
+                      <div class="col-xs-8 col-md-9">
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-bar-success"
+                            role="progressbar"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 60%"
+                          >
+                            <span class="sr-only">60%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end 4 -->
+                      <div class="col-xs-3 col-md-3 text-right">3</div>
+                      <div class="col-xs-8 col-md-9">
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-bar-info"
+                            role="progressbar"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 40%"
+                          >
+                            <span class="sr-only">40%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end 3 -->
+                      <div class="col-xs-3 col-md-3 text-right">2</div>
+                      <div class="col-xs-8 col-md-9">
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-bar-warning"
+                            role="progressbar"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 20%"
+                          >
+                            <span class="sr-only">20%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end 2 -->
+                      <div class="col-xs-3 col-md-3 text-right">1</div>
+                      <div class="col-xs-8 col-md-9">
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-bar-danger"
+                            role="progressbar"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 15%"
+                          >
+                            <span class="sr-only">15%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end 1 -->
+                    </div>
+                    <!-- end row -->
+                  </div>
+                  <div>
+                    <div class="container py-5">
+                      <!-- First Row [Products]-->
+                      <div class="font-weight-bold mb-2 cat-Title">
+                        <h1>
+                          Similiar Products<span>Everything a click away</span>
+                        </h1>
+                      </div>
+                      <div class="row pb-5 mb-4">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                          <!-- Card-->
+                          <div class="card rounded shadow-sm border-0">
+                            <div class="card-body p-4">
+                              <img
+                                src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg"
+                                alt=""
+                                class="img-fluid d-block mx-auto mb-3"
+                              />
+                              <h5>
+                                <a href="#" class="text-dark"
+                                  >Awesome product</a
+                                >
+                              </h5>
+                              <p class="small text-muted font-italic">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                              </p>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star-o text-success"></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                          <!-- Card-->
+                          <div class="card rounded shadow-sm border-0">
+                            <div class="card-body p-4">
+                              <img
+                                src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg"
+                                alt=""
+                                class="img-fluid d-block mx-auto mb-3"
+                              />
+                              <h5>
+                                <a href="#" class="text-dark"
+                                  >Awesome product</a
+                                >
+                              </h5>
+                              <p class="small text-muted font-italic">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                              </p>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star-o text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star-o text-success"></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                          <!-- Card-->
+                          <div class="card rounded shadow-sm border-0">
+                            <div class="card-body p-4">
+                              <img
+                                src="https://bootstrapious.com/i/snippets/sn-cards/shoes-3_rk25rt.jpg"
+                                alt=""
+                                class="img-fluid d-block mx-auto mb-3"
+                              />
+                              <h5>
+                                <a href="#" class="text-dark"
+                                  >Awesome product</a
+                                >
+                              </h5>
+                              <p class="small text-muted font-italic">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                              </p>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                          <!-- Card-->
+                          <div class="card rounded shadow-sm border-0">
+                            <div class="card-body p-4">
+                              <img
+                                src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg"
+                                alt=""
+                                class="img-fluid d-block mx-auto mb-3"
+                              />
+                              <h5>
+                                <a href="#" class="text-dark"
+                                  >Awesome product</a
+                                >
+                              </h5>
+                              <p class="small text-muted font-italic">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                              </p>
+                              <ul class="list-inline small">
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star text-success"></i>
+                                </li>
+                                <li class="list-inline-item m-0">
+                                  <i class="fa fa-star-o text-success"></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -357,7 +613,7 @@
             </div>
           </div>
           <div class="care">
-            <div class="care">
+            <div class="care care-last">
               <br />
               <h4>Customer Care</h4>
               <br />

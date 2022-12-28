@@ -40,6 +40,10 @@ img {
 #nav__bg-color {
   background-color: #325454;
 }
+.nav-bar-container {
+  width: 80%;
+  margin: 0 auto;
+}
 #Product-Container > span {
   display: flex;
   text-align: center;
@@ -54,7 +58,7 @@ nav .search-bar {
 }
 input[type="search"] {
   background: transparent;
-  width: 30vw;
+  width: 25vw;
   color: var(--color-dark);
   margin-left: 1rem;
   font-size: 0.9rem;
@@ -70,7 +74,7 @@ input[type="search"] {
 .Form-content {
   display: flex;
   justify-content: space-between;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 a {
   text-decoration: none;
