@@ -1,7 +1,8 @@
 function change_image(image) {
-  var image_container = document.getElementById("main-image");
-
-  image_container.src = image.src;
+  var image_container = document.querySelectorAll("main-image");
+  image_container.forEach((image_container) => {
+    image_container.src = image.src;
+  });
 }
 
 var index = 0;

@@ -7,6 +7,12 @@ Home.addEventListener("click", () => {
 Catagory.addEventListener("click", () => {
   window.location.replace("../Catalog_Page/index.html");
 });
+
+const buyNow = document.querySelector("#buy-now-btn");
+buyNow.addEventListener("click", () => {
+  window.location.href =
+    " https://www.walmart.com/ip/Dorel-Home-Pembroke-Convertible-Futon-Grey-Linen/55488992?athcpid=55488992&athpgid=AthenaItempage&athcgid=null&athznid=si&athieid=v0&athstid=CS004&athguid=pk5B_XDuGQNa0ipJWH6qvVEJpf5icfoo1GA1&athancid=null&athena=true";
+});
 // const FigureZoom = document.querySelector(".Figure-zoom");
 
 // function zoom(e) {
